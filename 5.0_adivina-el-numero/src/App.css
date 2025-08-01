@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-container {
+  background: #f7f7fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 2em 1.5em;
+}
+
+input[type="number"] {
+  padding: 0.5em 1em;
+  border: 1px solid #bbbbbb;
+  border-radius: 8px;
+  font-size: 1.1em;
+  margin-right: 0.5em;
+  width: 120px;
+  text-align: center;
+}
+
+button {
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  background: #bbbbbb;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #535bf2;
+}
+
+.message {
+  margin: 1.5em 0 1em 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.attempts {
+  color: #888;
+  font-size: 0.95em;
+  margin-top: 1em;
+}
