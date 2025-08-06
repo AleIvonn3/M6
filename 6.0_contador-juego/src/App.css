@@ -1,0 +1,127 @@
+/* Fondo general */
+body {
+  background: linear-gradient(120deg, #162450 0%, #f0fdfa 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Contenedor principal */
+#root {
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el juego del contador */
+.counter-container {
+  width: 370px;
+  margin: 40px auto;
+  padding: 36px 28px 28px 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(80, 112, 255, 0.13),
+    0 1.5px 6px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  transition: box-shadow 0.2s;
+}
+
+.counter-container:hover {
+  box-shadow: 0 10px 40px rgba(80, 112, 255, 0.18),
+    0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.counter-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #2d3a4a;
+  letter-spacing: 1px;
+}
+
+.counter-container input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  font-size: 1.15rem;
+  border-radius: 7px;
+  border: 1.5px solid #b5c7f7;
+  margin-right: 10px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.counter-container input[type="number"]:focus {
+  border: 1.5px solid #4f8cff;
+  background: #f0f7ff;
+}
+
+.counter-container button {
+  margin: 0 7px 14px 7px;
+  padding: 11px 22px;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #4f8cff 60%, #38bdf8 100%);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(80, 112, 255, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.counter-container button:disabled {
+  background: #b0b0b0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.counter-container button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #2563eb 60%, #0ea5e9 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.counter-container h3 {
+  margin-top: 28px;
+  font-size: 1.15rem;
+  color: #3b4252;
+  letter-spacing: 0.5px;
+}
+
+.counter-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.counter-container li {
+  background: linear-gradient(90deg, #000000 60%, #8ba59f 100%);
+  margin: 5px 0;
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 1.05rem;
+  color: #222;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(80, 112, 255, 0.05);
+  transition: background 0.2s;
+}
+
+.counter-container li:last-child {
+  background: linear-gradient(90deg, #9dc553 60%, #071d3a 100%);
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .counter-container {
+    width: 98vw;
+    padding: 18px 4vw;
+  }
+  .counter-container h2 {
+    font-size: 1.5rem;
+  }
+}
